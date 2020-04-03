@@ -2,27 +2,36 @@
 <head>
 	<title>Agenda Telemedicina MEDS On Line</title>
     <style>
-        #site {
+        body {
+            margin: 0;
+        }
+        .container {
             width: 100%;
             height: 100%;
+            margin: 0;
+        }
+        iframe.chat {
             position: absolute;
-            top: 0;
-            bottom: 0;
             left: 0;
             right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
             border: none;
+            width: 400px;
+            height: 80%;
+            min-height: 400px;
+            max-height: 800px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 5px 25px 0 rgba(0,0,0,.2);
         }
     </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-	<script type="text/javascript">
-    (function() {
-      var tc = document.createElement("script"); tc.type = "text/javascript"; tc.async = true;
-      tc.src = "https://app.talkcenter.io/v2/talkcenter.min.js";
-      var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(tc, s);
-      })();
-      window.TalkCenter = {token: "e0d5d6e9dab2a07c291de02d16dc0162"};
-    </script>
+    <div class="container">
+	    <iframe src="https://app.talkcenter.io/v2/app.html?token=e0d5d6e9dab2a07c291de02d16dc0162&hidden=false&title=Telemedicina%20MEDS%20On%20Line&logo=https%3A%2F%2Fstorage.googleapis.com%2Fpostcenter-prod-files-2018%2Fimage%2FAWF3COCL54UQ%2F5d0a7bd9_logo2.png&color=%23e88006&text_color=%23f5f4ff&request_country_id=true&email_as_id=false&account_author=true&anonymous_user=false&request_phone=false&sound_notifications=false&contact_form_fallback=false&contact_form_account=0&contact_form_fallback_email=false&contact_form_fallback_account=false&open_onload=true&open_onload_delay=0&open_onload_device=any&welcome_message_show=false&welcome_message_delay=0&welcome_message_persistent=false&welcome_message_frequency=5&welcome_message_device=any&avatar=https%3A%2F%2Fstorage.googleapis.com%2Fpostcenter-prod-files-2018%2Fimage%2FAWF3COGBUHSA%2F5d0a7be1_logo.png&login_message=Bienvenido%20a%20la%20Agenda%20Telemedicina%20MEDS&conversation_header_message=%C2%A1Hola!%20Sal%C3%BAdame%20para%20comenzar.&chat_side=true&chat_button_large=false&fb_login=false&google_login=false&only_social_login=false&open_on_device=any&mini_chat_can_reply=false&mini_chat_max_messages=1&backend_url=https%3A%2F%2Fservice.talkcenter.io%2Fbackend" class="chat">
+    </div>
 </body>
 </html>
